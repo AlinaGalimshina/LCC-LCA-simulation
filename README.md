@@ -68,6 +68,8 @@ Life cycle cost analysis
 
 Life cycle cost (LCC) – the sum of all costs over the whole life span of the building. One of the most used methods to calculate LCC is Net present approach (NPV), which is a sum of all costs and revenues discounted to the time of the initial investment.
 
+According to the Swiss Center for buildings’ rationalization, NPV is calculated using the following equation:
 
+![](https://latex.codecogs.com/gif.latex?NPV%20%3D%20C_%7BInvestments%7D%20&plus;%20C_%7BOperation%7D%20&plus;%20C_%7BMaintenance%7D%20&plus;%20C_%7BReplacement%7D%20&plus;%20C_%7BEnd%20of%20life%7D%20%3D%20C_%7BInvestment%7D%20&plus;%20%5Csum_%7BN%7D%5E%7Bn%20%3D%201%7D%20%28%5Cfrac%7BC_%7BMaintenance%7D*%281&plus;k%29%5E%7Bn%7D%7D%7B%281&plus;i_%7Bn%7D%29%5E%7Bn%7D%7D%29%20&plus;%20%5Csum_%7BN%7D%5E%7Bn%20%3D%201%7D%20%28%5Cfrac%7BC_%7BReplacement%7D*%281&plus;k%29%5E%7Bk%7D%7D%7B%281&plus;i_%7Bn%7D%29%5E%7Bk%7D%7D%29%20&plus;%20%5Csum_%7BN%7D%5E%7Bn%20%3D%201%7D%20%28%5Cfrac%7BC_%7BOperation%7D*%281&plus;k%29%5E%7Bn%7D%7D%7B%281&plus;i_%7Bn%7D%29%5E%7Bn%7D%7D%29%20&plus;%20%5Csum_%7BN%7D%5E%7Bn%20%3D%201%7D%20%28%5Cfrac%7BC_%7BEnd%20of%20life%7D*%281&plus;k%29%5E%7Bn%7D%7D%7B%281&plus;i_%7Bn%7D%29%5E%7Bn%7D%7D%29) 
 
 
