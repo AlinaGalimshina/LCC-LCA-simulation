@@ -31,6 +31,16 @@ After the transmission losses are calculated, the final transmission loss is ![]
 Thermal bridge ![](https://latex.codecogs.com/gif.latex?%5Cpsi) -  an area of the building envelope where the heat flow is increased in comparison with adjacent areas (if there is a difference in temperature between the inside and the outside).
 Thermal bridge can be calculated or can be assumed to have a certain percentage depending on the type/age/construction of the building as it is defined by SIA 380/1.
 
+Ventilation loss ![](https://latex.codecogs.com/gif.latex?Q_%7BV%7D)  – heat loss due to ventilation system. 
+It is calculated as: ![](https://latex.codecogs.com/gif.latex?Q_%7BV%7D%20%3D%20c_%7Bp%2Cair%7D%20*%20q_%7Bvent%7D*%28T_%7Bin%7D%20-%20T_%7Bout%7D%29), where
+![](https://latex.codecogs.com/gif.latex?c_%7Bp%2Cair%7D) [J/kg*k] – air specific heat capacity
+![](https://latex.codecogs.com/gif.latex?q_%7Bvent%7D) [m3/s] – outside air volume flow
+![](https://latex.codecogs.com/gif.latex?T_%7Bin%7D) - comfort temerature inside,
+![](https://latex.codecogs.com/gif.latex?T_%7Bout%7D) - monthly mean temperature outside.	
+ 
+▪ For the calculation of the outside air volume flow in buildings with mechanical ventilation during the operating time of the ventilation, the larger value between the outside air and exhaust air volume flow of the ventilation system is used. To this, the outside air volume flow due to the air permeability of the building envelope with running ventilation system, is added- in buildings whose air permeability meets the requirements of SIA 180, it can be neglected.
+▪ During the non-operating period, the outside air volume flow is used due to the air permeability of the building, taking into account the leakage of the stationary ventilation system.
+▪ A possible heat recovery with a temperature recovery efficiency can be taken into account.
 
 
 
