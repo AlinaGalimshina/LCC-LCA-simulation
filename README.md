@@ -35,12 +35,25 @@ Ventilation loss ![](https://latex.codecogs.com/gif.latex?Q_%7BV%7D)  – heat l
 It is calculated as: ![](https://latex.codecogs.com/gif.latex?Q_%7BV%7D%20%3D%20c_%7Bp%2Cair%7D%20*%20q_%7Bvent%7D*%28T_%7Bin%7D%20-%20T_%7Bout%7D%29), where
 ![](https://latex.codecogs.com/gif.latex?c_%7Bp%2Cair%7D) [J/kg*k] – air specific heat capacity
 ![](https://latex.codecogs.com/gif.latex?q_%7Bvent%7D) [m3/s] – outside air volume flow
-![](https://latex.codecogs.com/gif.latex?T_%7Bin%7D) - comfort temerature inside,
-![](https://latex.codecogs.com/gif.latex?T_%7Bout%7D) - monthly mean temperature outside.	
+![](https://latex.codecogs.com/gif.latex?T_%7Bin%7D) [![](https://latex.codecogs.com/gif.latex?%7B%5Ccirc%7D_%7BC%7D)]- comfort temerature inside,
+![](https://latex.codecogs.com/gif.latex?T_%7Bout%7D) [![](https://latex.codecogs.com/gif.latex?%7B%5Ccirc%7D_%7BC%7D)] - monthly mean temperature outside.	
  
-▪ For the calculation of the outside air volume flow in buildings with mechanical ventilation during the operating time of the ventilation, the larger value between the outside air and exhaust air volume flow of the ventilation system is used. To this, the outside air volume flow due to the air permeability of the building envelope with running ventilation system, is added- in buildings whose air permeability meets the requirements of SIA 180, it can be neglected.
-▪ During the non-operating period, the outside air volume flow is used due to the air permeability of the building, taking into account the leakage of the stationary ventilation system.
+▪ For the calculation of the outside air volume flow in buildings with mechanical ventilation during the operating time of the ventilation, the larger value between the outside air and exhaust air volume flow of the ventilation system is used. To do this, the outside air volume flow due to the air permeability of the building envelope with running ventilation system is added. In buildings whose air permeability meets the requirements of SIA 180, it can be neglected.
 ▪ A possible heat recovery with a temperature recovery efficiency can be taken into account.
+
+Heat gains (internal gains) – heat which is released by the occupants, equipment, lighting. It is defined by static values of SIA 380/1.
+Solar heat gains ![](https://latex.codecogs.com/gif.latex?Q_%7Bs%7D) - heat gains coming from solar to the building through the transparent surfaces (windows). It is calculated as:
+
+![](https://latex.codecogs.com/gif.latex?Q_%7Bs%7D%20%3D%20I_%7Bsol%7D%20*%20A_%7Bwindow%7D*g*f*f_%7Bs1%7D*f_%7Bs2%7D*f_%7Bs3%28I%29%29%7D*f_%7Bs3%28II%29%29%7D), where
+
+
+
+![](https://latex.codecogs.com/gif.latex?f_%7Bs1%7D) - shading factor for horizon
+
+![](https://latex.codecogs.com/gif.latex?f_%7Bs2%7D) - shading factor for overhang
+
+![](https://latex.codecogs.com/gif.latex?f_%7Bs3%28I%29%29%7D), ![](https://latex.codecogs.com/gif.latex?f_%7Bs3%28II%29%29%7D) - shading factors for side blinds
+
 
 
 
