@@ -46,13 +46,27 @@ Solar heat gains ![](https://latex.codecogs.com/gif.latex?Q_%7Bs%7D) - heat gain
 
 ![](https://latex.codecogs.com/gif.latex?Q_%7Bs%7D%20%3D%20I_%7Bsol%7D%20*%20A_%7Bwindow%7D*g*f*f_%7Bs1%7D*f_%7Bs2%7D*f_%7Bs3%28I%29%29%7D*f_%7Bs3%28II%29%29%7D), where
 
+g - solar heat gain coefficient 
 
+![](https://latex.codecogs.com/gif.latex?A_%7Bwindow%7D) [m2] - Window area
+
+f [%] - glazing percentage
+ 
+![](https://latex.codecogs.com/gif.latex?I_%7Bsol%7D) [kWh/m2] - solar irradiation
 
 ![](https://latex.codecogs.com/gif.latex?f_%7Bs1%7D) - shading factor for horizon
 
 ![](https://latex.codecogs.com/gif.latex?f_%7Bs2%7D) - shading factor for overhang
 
 ![](https://latex.codecogs.com/gif.latex?f_%7Bs3%28I%29%29%7D), ![](https://latex.codecogs.com/gif.latex?f_%7Bs3%28II%29%29%7D) - shading factors for side blinds
+
+Heating demand is calculated for each month of the year.
+
+After it is defined, the heating source is selected (heatpump, electricity, gas, oil, wood). For example, geothermal (ground source heat pump GSHP) can have a coefficient of performance (COP) as 3.5 which would mean that for 1 kWh of electricity we get 3.5 kWh of heating. For electricity COP is usually 1. For gas heating systems, there is another factor which is called AFUE – annual fuel utilization efficiency which can be between 70-97%. Once the source is selected, the final energy demand is calculated. 
+
+Life cycle cost analysis
+
+Life cycle cost (LCC) – the sum of all costs over the whole life span of the building. One of the most used methods to calculate LCC is Net present approach (NPV), which is a sum of all costs and revenues discounted to the time of the initial investment.
 
 
 
