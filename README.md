@@ -27,8 +27,10 @@ U-value is calculated as ![](https://latex.codecogs.com/gif.latex?U%20%3D%20%5Cf
 ![](https://latex.codecogs.com/gif.latex?T_%7Bin%7D) - comfort temerature inside,
 ![](https://latex.codecogs.com/gif.latex?T_%7Bout%7D) - monthly mean temperature outside.
 
-After the transmission losses are calculated, the final transmission loss is 
-Thermal bridge -  an area of the building envelope where the heat flow is increased in comparison with adjacent areas (if there is a difference in temperature between the inside and the outside).
-Thermal bridge can be calculated or can be assumed to have a certain percentage depending on the type/age/construction of the building as it is defined by SIA 380. 
+After the transmission losses are calculated, the final transmission loss is ![](https://latex.codecogs.com/gif.latex?Q_%7BT%7D%20%3D%20%5Csum%20Q_%7BT%2Cm%7D%20*%20%5Cpsi)
+Thermal bridge ![](https://latex.codecogs.com/gif.latex?%5Cpsi) -  an area of the building envelope where the heat flow is increased in comparison with adjacent areas (if there is a difference in temperature between the inside and the outside).
+Thermal bridge can be calculated or can be assumed to have a certain percentage depending on the type/age/construction of the building as it is defined by SIA 380/1.
+
+
 
 
