@@ -77,4 +77,11 @@ k [%] - inflation rate;
 N [years]  - time period of analysis;
 k [years]  - replacement year.
 
+Life cycle assessment
+
+Life cycle assessment (LCA) is a methodology used to evaluate the environmental impacts over the whole life span of a building. The goal of the lca is to quantify the environmental impacts from the extraction and production of the materials through life cycle to the end of life.
+
+The LCA calculation in this code is performed as following:
+
+![](https://latex.codecogs.com/gif.latex?LCA_%7Bi%7D%20%3D%20LCA_%7Bembodied%2Ci%7D%20&plus;%20LCA_%7Boperation%7D%20&plus;%20LCA_%7Breplacement%2Ci%7D%20&plus;%20LCA_%7Bendoflife%2Ci%7D%20%3D%20m_%7Bembodied%2C%20i%7D*k_%7Bi%7D%20&plus;%20%5Cfrac%7BQ_H%7D%7BPF%7D%20*%20IF_%7Bo%7D*RSP%20&plus;%20m_%7Bembodied%2C%20i%7D*k_%7Bi%7D*%20n_%7Bi%7D%20&plus;%20m_%7Bendoflife%2C%20i%7D*k_%7Bi%7D), where
 
