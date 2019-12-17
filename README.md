@@ -72,9 +72,9 @@ According to the Swiss Center for buildings’ rationalization, NPV is calculate
 
 ![](https://latex.codecogs.com/gif.latex?NPV%20%3D%20C_%7BInvestments%7D%20&plus;%20C_%7BOperation%7D%20&plus;%20C_%7BMaintenance%7D%20&plus;%20C_%7BReplacement%7D%20&plus;%20C_%7BEnd%20of%20life%7D%20%3D%20C_%7BInvestment%7D%20&plus;%20%5Csum_%7BN%7D%5E%7Bn%20%3D%201%7D%20%28%5Cfrac%7BC_%7BMaintenance%7D*%281&plus;k%29%5E%7Bn%7D%7D%7B%281&plus;i_%7Bn%7D%29%5E%7Bn%7D%7D%29%20&plus;%20%5Csum_%7BN%7D%5E%7Bn%20%3D%201%7D%20%28%5Cfrac%7BC_%7BReplacement%7D*%281&plus;k%29%5E%7Bk%7D%7D%7B%281&plus;i_%7Bn%7D%29%5E%7Bk%7D%7D%29%20&plus;%20%5Csum_%7BN%7D%5E%7Bn%20%3D%201%7D%20%28%5Cfrac%7BC_%7BOperation%7D*%281&plus;k%29%5E%7Bn%7D%7D%7B%281&plus;i_%7Bn%7D%29%5E%7Bn%7D%7D%29%20&plus;%20%5Csum_%7BN%7D%5E%7Bn%20%3D%201%7D%20%28%5Cfrac%7BC_%7BEnd%20of%20life%7D*%281&plus;k%29%5E%7Bn%7D%7D%7B%281&plus;i_%7Bn%7D%29%5E%7Bn%7D%7D%29) , where
 
-k [%] - inflation rate
-![](https://latex.codecogs.com/gif.latex?i_%7Bn%7D) - discount rate(nominal)
-N [years]  - time period of analysis 
-k [years]  - replacement year
+k [%] - inflation rate;
+![](https://latex.codecogs.com/gif.latex?i_%7Bn%7D) - discount rate(nominal);
+N [years]  - time period of analysis;
+k [years]  - replacement year.
 
 
