@@ -20,8 +20,8 @@ It is calculated as:
 
 ![](https://latex.codecogs.com/gif.latex?Q_T,_m%3D%20%5Csum%20%5Cfrac%7B%5Clambda%7D%7Bd%7D*A*%28T_%7Bin%7D%20-%20T_%7Bout%7D%29), where
 
-U[W/m2*K] – heat transfer coefficient, rate of the heat loss through the construction. 
-U-value is calculated as ![](https://latex.codecogs.com/gif.latex?U%20%3D%20%5Cfrac%7B%5Clambda%20%7D%7Bd%7D), where ![](https://latex.codecogs.com/gif.latex?%5Clambda) – thermal conductivity [W/K*m], ![](https://latex.codecogs.com/gif.latex?d) –thickness [m],
+U [W/m2K] – heat transfer coefficient, rate of the heat loss through the construction. 
+U-value is calculated as ![](https://latex.codecogs.com/gif.latex?U%20%3D%20%5Cfrac%7B%5Clambda%20%7D%7Bd%7D), where ![](https://latex.codecogs.com/gif.latex?%5Clambda) – thermal conductivity [W/Km], ![](https://latex.codecogs.com/gif.latex?d) –thickness [m],
 
 ![](https://latex.codecogs.com/gif.latex?A) [m2] – surface area,
 ![](https://latex.codecogs.com/gif.latex?T_%7Bin%7D) - comfort temerature inside,
