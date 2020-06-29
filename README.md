@@ -30,26 +30,45 @@ In the current calculations, symbol i represents the components of the envelope 
 
 Ventilation loss ![](https://latex.codecogs.com/gif.latex?Q_%7BV%7D)  – heat loss due to ventilation system. 
 It is calculated as: ![](https://latex.codecogs.com/gif.latex?Q_%7BV%7D%20%3D%20c_%7Bp%2Cair%7D%20*%20q_%7Bvent%7D*%28T_%7Bin%7D%20-%20T_%7Bout%7D%29), where
-![](https://latex.codecogs.com/gif.latex?c_%7Bp%2Cair%7D) [J/kg*k] – air specific heat capacity
-![](https://latex.codecogs.com/gif.latex?q_%7Bvent%7D) [m3/s] – outside air volume flow
+<a href="https://www.codecogs.com/eqnedit.php?latex=c_{p,air}&space;[Wh/(m^3*K]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_{p,air}&space;[Wh/(m^3*K]" title="c_{p,air} [Wh/(m^3*K]" /></a> – air specific heat capacity
+<a href="https://www.codecogs.com/eqnedit.php?latex=q_{vent}[m^3/(m^2*h)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?q_{vent}[m^3/(m^2*h)]" title="q_{vent}[m^3/(m^2*h)]" /></a> – outside air volume flow
 ![](https://latex.codecogs.com/gif.latex?T_%7Bin%7D) [![](https://latex.codecogs.com/gif.latex?%7B%5Ccirc%7D_%7BC%7D)]- comfort temerature inside,
-![](https://latex.codecogs.com/gif.latex?T_%7Bout%7D) [![](https://latex.codecogs.com/gif.latex?%7B%5Ccirc%7D_%7BC%7D)] - monthly mean temperature outside.	
+![](https://latex.codecogs.com/gif.latex?T_%7Bout%7D) [![](https://latex.codecogs.com/gif.latex?%7B%5Ccirc%7D_%7BC%7D)] - monthly mean dry-bulb temperature outside.	
  
-▪ For the calculation of the outside air volume flow in buildings with mechanical ventilation during the operating time of the ventilation, the larger value between the outside air and exhaust air volume flow of the ventilation system is used. To do this, the outside air volume flow due to the air permeability of the building envelope with running ventilation system is added. In buildings whose air permeability meets the requirements of SIA 180, it can be neglected.
-▪ A possible heat recovery with a temperature recovery efficiency can be taken into account.
+For the calculation of the outside air volume flow in buildings with mechanical ventilation during the operating time of the ventilation, the larger value between the outside air and exhaust air volume flow of the ventilation system is used. To do this, the outside air volume flow due to the air permeability of the building envelope with running ventilation system is added. In buildings whose air permeability meets the requirements of SIA 180, it can be neglected.
+A possible heat recovery with a temperature recovery efficiency can be taken into account.
 
-Heat gains (internal gains) – heat which is released by the occupants, equipment, lighting. It is defined by static values of SIA 380/1.
-Solar heat gains ![](https://latex.codecogs.com/gif.latex?Q_%7Bs%7D) - heat gains coming from solar to the building through the transparent surfaces (windows). It is calculated as:
+Heat gains (internal gains) – heat which is released by the occupants, equipment, lighting. It is defined by static values of SIA 380/1. It is defined as:
 
-![](https://latex.codecogs.com/gif.latex?Q_%7Bs%7D%20%3D%20I_%7Bsol%7D%20*%20A_%7Bwindow%7D*g*f*f_%7Bs1%7D*f_%7Bs2%7D*f_%7Bs3%28I%29%29%7D*f_%7Bs3%28II%29%29%7D), where
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{int,m}=Q_{icc,m}&space;&plus;&space;Q_{iel,m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{int,m}=Q_{icc,m}&space;&plus;&space;Q_{iel,m}" title="Q_{int,m}=Q_{icc,m} + Q_{iel,m}" /></a> , where
 
-g - solar heat gain coefficient 
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{icc,m}[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{icc,m}[kWh/m^2,month]" title="Q_{icc,m}[kWh/m^2,month]" /></a> is the monthly occupancy heat gain, which is calculated as:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{icc,m}=Q_{g,occ,m}*t_{occ}*t/(A_p*1000)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{icc,m}=Q_{g,occ,m}*t_{occ}*t/(A_p*1000)" title="Q_{icc,m}=Q_{g,occ,m}*t_{occ}*t/(A_p*1000)" /></a>
+
+where <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{g,occ}[W/P]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{g,occ}[W/P]" title="Q_{g,occ}[W/P]" /></a> is the heat gain per person defined by SIA 380/1, <a href="https://www.codecogs.com/eqnedit.php?latex=t_{occ}[h/day]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?t_{occ}[h/day]" title="t_{occ}[h/day]" /></a> is the occupancy time during the day, t is the number of days in a month, and <a href="https://www.codecogs.com/eqnedit.php?latex=A_p&space;[m^2/P]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?A_p&space;[m^2/P]" title="A_p [m^2/P]" /></a> is the area per person. 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{iel,m}&space;[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{iel,m}&space;[kWh/m^2,month]" title="Q_{iel,m} [kWh/m^2,month]" /></a> is the monthly heat gains from the electricity, e.g. lighting and equipment.
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{iel,m}=Q_{el,m}*f_{el}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{iel,m}=Q_{el,m}*f_{el}" title="Q_{iel,m}=Q_{el,m}*f_{el}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex==Q_{el}&space;[kWh/m^2]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=Q_{el}&space;[kWh/m^2]" title="=Q_{el} [kWh/m^2]" /></a> is the monthly electricity heat gains defined by SIA 380/1 and <a href="https://www.codecogs.com/eqnedit.php?latex=f_{el}[-]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{el}[-]" title="f_{el}[-]" /></a> is a  reduction factor defined by SIA 380/1.
+
+Solar heat gains <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{s,m}[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{s,m}[kWh/m^2,month]" title="Q_{s,m}[kWh/m^2,month]" /></a> - heat gains coming from solar to the building through the transparent surfaces (windows). It is calculated as:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{s,m}=&space;\sum_{q}^{}Q_{s,m,q}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{s,m}=&space;\sum_{q}^{}Q_{s,m,q}" title="Q_{s,m}= \sum_{q}^{}Q_{s,m,q}" /></a>, where
+
+where <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{s,m,q}[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{s,m,q}[kWh/m^2,month]" title="Q_{s,m,q}[kWh/m^2,month]" /></a> is the solar heat gains for month m for the q-th window. It is calculated as:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{s,m,q}=&space;I_{sol}*A_q*g_q*f_q*f_{s1,q}*f_{s2,q}*f_{s3(I),q}*f_{s3(II),q}/ERA" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{s,m,q}=&space;I_{sol}*A_q*g_q*f_q*f_{s1,q}*f_{s2,q}*f_{s3(I),q}*f_{s3(II),q}/ERA" title="Q_{s,m,q}= I_{sol}*A_q*g_q*f_q*f_{s1,q}*f_{s2,q}*f_{s3(I),q}*f_{s3(II),q}/ERA" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=g_{q}&space;[-]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g_{q}&space;[-]" title="g_{q} [-]" /></a> - solar heat gain coefficient 
 
 ![](https://latex.codecogs.com/gif.latex?A_%7Bwindow%7D) [m2] - Window area
 
 f [%] - glazing percentage
  
-![](https://latex.codecogs.com/gif.latex?I_%7Bsol%7D) [kWh/m2] - solar irradiation
+![](https://latex.codecogs.com/gif.latex?I_%7Bsol%7D) [kWh/m2] - monthly solar irradiation
 
 ![](https://latex.codecogs.com/gif.latex?f_%7Bs1%7D) - shading factor for horizon
 
@@ -57,9 +76,14 @@ f [%] - glazing percentage
 
 ![](https://latex.codecogs.com/gif.latex?f_%7Bs3%28I%29%29%7D), ![](https://latex.codecogs.com/gif.latex?f_%7Bs3%28II%29%29%7D) - shading factors for side blinds
 
-Heating demand is calculated for each month of the year.
+The assumptions taken for the shading factors can be seen in SIA 380/1 (2016), pages 37-38.
 
-After it is defined, the heating source is selected (heatpump, electricity, gas, oil, wood). For example, geothermal (ground source heat pump GSHP) can have a coefficient of performance (COP) as 3.5 which would mean that for 1 kWh of electricity we get 3.5 kWh of heating. For electricity COP is usually 1. For gas heating systems, there is another factor which is called AFUE – annual fuel utilization efficiency which can be between 70-97%. Once the source is selected, the final energy demand is calculated. 
+Finally, the annual heating demand is calculated by summing the monthly heating demand:
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{H,a}=\sum_{m=1}^{12}Q_{H,m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{H,a}=\sum_{m=1}^{12}Q_{H,m}" title="Q_{H,a}=\sum_{m=1}^{12}Q_{H,m}" /></a>
+
+After it is defined, the heating source is selected (heatpump, electricity, gas, oil, wood). For example, geothermal (ground source heat pump GSHP) can have a coefficient of performance (COP) as 3.5 which would mean that for 1 kWh of electricity we get 3.5 kWh of heating. For electricity COP is usually 1. For gas heating systems, there is another factor which is called AFUE – annual fuel utilization efficiency which can be between 70-97%. In this analysis, this factor is defined as PF (performance factor). Once the source is selected, the final energy demand is eventually calculated as:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{F,a}=&space;Q_{H,a}/PF" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{F,a}=&space;Q_{H,a}/PF" title="Q_{F,a}= Q_{H,a}/PF" /></a>
 
 Life cycle cost analysis
 
