@@ -9,23 +9,20 @@ The monthly heating demand is calculated as following:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_H,_m=&space;(Q_T,_m&space;&plus;&space;Q_V,_m-(Q_s,_m&space;&plus;&space;Q_{int,m})*\eta)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_H,_m=&space;(Q_T,_m&space;&plus;&space;Q_V,_m-(Q_s,_m&space;&plus;&space;Q_{int,m})*\eta)" title="Q_H,_m= (Q_T,_m + Q_V,_m-(Q_s,_m + Q_{int,m})*\eta)" /></a>, where
 
-![](https://latex.codecogs.com/gif.latex?Q_%7BT%7D) – transmission loss, 
-![](https://latex.codecogs.com/gif.latex?Q_%7BV%7D) – ventilation loss, 
-![](https://latex.codecogs.com/gif.latex?Q_%7Bs%7D) – solar heat gain, 
-![](https://latex.codecogs.com/gif.latex?Q_%7Bint%7D) – internal heat gains, 
-![](https://latex.codecogs.com/gif.latex?%5Ceta) – coefficient of utilization of the heat gains.
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_T,_m,&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_T,_m,&space;[kWh/(m^2,month)]" title="Q_T,_m, [kWh/(m^2,month)]" /></a> – monthly transmission loss, 
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_V,_m,&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_V,_m,&space;[kWh/(m^2,month)]" title="Q_V,_m, [kWh/(m^2,month)]" /></a> – ventilation loss, 
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_s,_m,&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_s,_m,&space;[kWh/(m^2,month)]" title="Q_s,_m, [kWh/(m^2,month)]" /></a> – solar heat gain, 
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{int,m},&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{int,m},&space;[kWh/(m^2,month)]" title="Q_{int,m}, [kWh/(m^2,month)]" /></a> – internal heat gains, 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\eta,&space;[-]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\eta,&space;[-]" title="\eta, [-]" /></a> – coefficient of utilization of the heat gains.
 
-Transmission loss ![](https://latex.codecogs.com/gif.latex?Q_%7BT%7D) – heat transmission through the building envelope (roof, ground, windows). 
+The monthly transmission loss <a href="https://www.codecogs.com/eqnedit.php?latex=Q_T,_m,&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_T,_m,&space;[kWh/(m^2,month)]" title="Q_T,_m, [kWh/(m^2,month)]" /></a> – heat transmission through the building envelope (roof, ground, windows). 
 It is calculated as: 
 
-![](https://latex.codecogs.com/gif.latex?Q_T,_m%3D%20%5Csum%20%5Cfrac%7B%5Clambda%7D%7Bd%7D*A*%28T_%7Bin%7D%20-%20T_%7Bout%7D%29), where
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{T,m}&space;=&space;\sum_{i}^{}Q_{T,m,i}*\varphi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{T,m}&space;=&space;\sum_{i}^{}Q_{T,m,i}*\varphi" title="Q_{T,m} = \sum_{i}^{}Q_{T,m,i}*\varphi" /></a>, 
 
-U [W/m2K] – heat transfer coefficient, rate of the heat loss through the construction. 
-U-value is calculated as ![](https://latex.codecogs.com/gif.latex?U%20%3D%20%5Cfrac%7B%5Clambda%20%7D%7Bd%7D), where ![](https://latex.codecogs.com/gif.latex?%5Clambda) – thermal conductivity [W/Km], ![](https://latex.codecogs.com/gif.latex?d) –thickness [m],
+where <a href="https://www.codecogs.com/eqnedit.php?latex=\varphi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\varphi" title="\varphi" /></a> represents the thermal bridge i.e., an area of the building envelope where the heat flow is increased in comparison with adjacent areas (if there is a difference in temperature between the inside and the outside). The thermal bridge can be calculated or can be assumed to have a certain percentage depending on the type/age/construction of the building as it is defined by SIA 380. <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{T,m,i},[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{T,m,i},[kWh/m^2,month]" title="Q_{T,m,i},[kWh/m^2,month]" /></a> is the monthly transmission loss for the i-th component and is calculated as:
 
-![](https://latex.codecogs.com/gif.latex?A) [m2] – surface area,
-![](https://latex.codecogs.com/gif.latex?T_%7Bin%7D) - comfort temerature inside,
-![](https://latex.codecogs.com/gif.latex?T_%7Bout%7D) - monthly mean temperature outside.
+where T_in  [°C] is the operating temperature inside, T_out  [°C] is the mean outside dry-bulb temperature during a month, U_i  [W/m^2 K] is the heat transfer coefficient of the component i, k_i  [m^2]  is a surface area of the component i,  z [days] is the number of days in the current  month and ERA [m^2] is the energy reference area that represents the heated floor area of a building.
 
 After the transmission losses are calculated, the final transmission loss is ![](https://latex.codecogs.com/gif.latex?Q_%7BT%7D%20%3D%20%5Csum%20Q_%7BT%2Cm%7D%20*%20%5Cpsi)
 Thermal bridge ![](https://latex.codecogs.com/gif.latex?%5Cpsi) -  an area of the building envelope where the heat flow is increased in comparison with adjacent areas (if there is a difference in temperature between the inside and the outside).
