@@ -1,13 +1,13 @@
 # LCC-LCA-simulation
 
-The current code describes the analysis of Life cycle cost (LCC) and Life cycle assessment (LCA) for building renovation process. The analysis includes the following stages - A1-A3 (production), B4 (replacement), B6 (operational energy use) and C1-C4 (end of life). The data is taken from the .txt file where the input parameters are listed as well as the excel file (Components_catalog_data.xlsx) where the possible renovation measures for the envelope are listed. 
+The current code describes the analysis of Life cycle cost (LCC) and Life cycle assessment (LCA) for building renovation process. The analyses include the following stages - A1-A3 (production), B4 (replacement), B6 (operational energy use) and C1-C4 (end of life). In case of LCC, the repair is also taken into account. The data is taken from the .txt file where the input parameters are listed as well as the excel file (Components_catalog_data.xlsx) where the possible renovation measures for the envelope are listed. 
 
-The code is divided into two big parts - The assessed building before renovation and after renovation. The building before renovation includes only the operational energy consumption(heating and electricity) as well as replacement and end of life.
+The code is divided into two parts - The assessed building before renovation and after renovation. The building before renovation includes only the operational energy consumption(heating and electricity) as well as replacement and end of life.
 
 The operational energy consumption is calculated according to the Swiss standard SIA 380/1. 
-Heating demand is calculated as following:
+The monthly heating demand is calculated as following:
 
-![](https://latex.codecogs.com/gif.latex?Q_%7BH%7D%20%3D%20Q_%7BT%7D%20&plus;%20Q_%7BV%7D%20-%20%28Q_%7Bs%7D%20&plus;%20Q_%7Bint%7D%29*%5Ceta), where
+![](<a href="https://www.codecogs.com/eqnedit.php?latex=Q_H,_m=&space;(Q_T,_m&space;&plus;&space;Q_V,_m-(Q_s,_m&space;&plus;&space;Q_{int,m})*\eta)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_H,_m=&space;(Q_T,_m&space;&plus;&space;Q_V,_m-(Q_s,_m&space;&plus;&space;Q_{int,m})*\eta)" title="Q_H,_m= (Q_T,_m + Q_V,_m-(Q_s,_m + Q_{int,m})*\eta)" /></a>), where
 
 ![](https://latex.codecogs.com/gif.latex?Q_%7BT%7D) – transmission loss, 
 ![](https://latex.codecogs.com/gif.latex?Q_%7BV%7D) – ventilation loss, 
@@ -15,7 +15,7 @@ Heating demand is calculated as following:
 ![](https://latex.codecogs.com/gif.latex?Q_%7Bint%7D) – internal heat gains, 
 ![](https://latex.codecogs.com/gif.latex?%5Ceta) – coefficient of utilization of the heat gains.
 
-Transmission loss ![](https://latex.codecogs.com/gif.latex?Q_%7BT%7D) – heat transmission through the wall or any other type of construction (roof, ground, windows). 
+Transmission loss ![](https://latex.codecogs.com/gif.latex?Q_%7BT%7D) – heat transmission through the building envelope (roof, ground, windows). 
 It is calculated as: 
 
 ![](https://latex.codecogs.com/gif.latex?Q_T,_m%3D%20%5Csum%20%5Cfrac%7B%5Clambda%7D%7Bd%7D*A*%28T_%7Bin%7D%20-%20T_%7Bout%7D%29), where
