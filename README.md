@@ -154,9 +154,7 @@ The operation cost is calculated as:
 
 where <a href="https://www.codecogs.com/eqnedit.php?latex=m_{op}&space;[CHF/kWh]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?m_{op}&space;[CHF/kWh]" title="m_{op} [CHF/kWh]" /></a> is the operational costs for heating, 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=ERA&space;[m^2]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?ERA&space;[m^2]" title="ERA [m^2]" /></a> is the energy reference area 
-
-and <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{F,a}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{F,a}" title="Q_{F,a}" /></a>. 
+<a href="https://www.codecogs.com/eqnedit.php?latex=ERA&space;[m^2]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?ERA&space;[m^2]" title="ERA [m^2]" /></a> is the energy reference area.
 
 The output from the assessment is the total LCC of a renovated building in CHF.
 
