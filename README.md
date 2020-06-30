@@ -10,6 +10,7 @@ The monthly heating demand is calculated as following:
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_H,_m=&space;(Q_T,_m&space;&plus;&space;Q_V,_m-(Q_s,_m&space;&plus;&space;Q_{int,m})*\eta)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_H,_m=&space;(Q_T,_m&space;&plus;&space;Q_V,_m-(Q_s,_m&space;&plus;&space;Q_{int,m})*\eta)" title="Q_H,_m= (Q_T,_m + Q_V,_m-(Q_s,_m + Q_{int,m})*\eta)" /></a>, where
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_T,_m,&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_T,_m,&space;[kWh/(m^2,month)]" title="Q_T,_m, [kWh/(m^2,month)]" /></a> – monthly transmission loss, 
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_V,_m,&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_V,_m,&space;[kWh/(m^2,month)]" title="Q_V,_m, [kWh/(m^2,month)]" /></a> – ventilation loss, 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_s,_m,&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_s,_m,&space;[kWh/(m^2,month)]" title="Q_s,_m, [kWh/(m^2,month)]" /></a> – solar heat gain, 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{int,m},&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{int,m},&space;[kWh/(m^2,month)]" title="Q_{int,m}, [kWh/(m^2,month)]" /></a> – internal heat gains, 
