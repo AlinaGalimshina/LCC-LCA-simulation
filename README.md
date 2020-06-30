@@ -118,7 +118,7 @@ After it is defined, the heating source is selected (heatpump, electricity, gas,
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{F,a}=&space;Q_{H,a}/PF" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{F,a}=&space;Q_{H,a}/PF" title="Q_{F,a}= Q_{H,a}/PF" /></a>
 
-\mathbf{Life cycle cost analysis}
+<ins>Life cycle cost analysis</ins>
 
 Life cycle cost analysis (LCCA) is the method to calculate the life cycle cost (LCC) of the building, which is the sum of all costs over the whole life span. One of the most used methods to calculate LCC is the net present value approach (NPV), which is a sum of all costs and revenues discounted to the time of the initial investment.
 
