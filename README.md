@@ -12,30 +12,51 @@ The monthly heating demand is calculated as following:
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_T,_m,&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_T,_m,&space;[kWh/(m^2,month)]" title="Q_T,_m, [kWh/(m^2,month)]" /></a> – monthly transmission loss, 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_V,_m,&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_V,_m,&space;[kWh/(m^2,month)]" title="Q_V,_m, [kWh/(m^2,month)]" /></a> – ventilation loss, 
-<a href="https://www.codecogs.com/eqnedit.php?latex=Q_s,_m,&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_s,_m,&space;[kWh/(m^2,month)]" title="Q_s,_m, [kWh/(m^2,month)]" /></a> – solar heat gain, 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_s,_m,&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_s,_m,&space;[kWh/(m^2,month)]" title="Q_s,_m, [kWh/(m^2,month)]" /></a> – solar heat gain,
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{int,m},&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{int,m},&space;[kWh/(m^2,month)]" title="Q_{int,m}, [kWh/(m^2,month)]" /></a> – internal heat gains, 
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=\eta,&space;[-]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\eta,&space;[-]" title="\eta, [-]" /></a> – coefficient of utilization of the heat gains.
 
 The monthly transmission loss <a href="https://www.codecogs.com/eqnedit.php?latex=Q_T,_m,&space;[kWh/(m^2,month)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_T,_m,&space;[kWh/(m^2,month)]" title="Q_T,_m, [kWh/(m^2,month)]" /></a> – heat transmission through the building envelope (roof, ground, windows). 
+
 It is calculated as: 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{T,m}&space;=&space;\sum_{i}^{}Q_{T,m,i}*\varphi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{T,m}&space;=&space;\sum_{i}^{}Q_{T,m,i}*\varphi" title="Q_{T,m} = \sum_{i}^{}Q_{T,m,i}*\varphi" /></a> 
 
-where <a href="https://www.codecogs.com/eqnedit.php?latex=\varphi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\varphi" title="\varphi" /></a> represents the thermal bridge i.e., an area of the building envelope where the heat flow is increased in comparison with adjacent areas (if there is a difference in temperature between the inside and the outside). The thermal bridge can be calculated or can be assumed to have a certain percentage depending on the type/age/construction of the building as it is defined by SIA 380. <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{T,m,i},[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{T,m,i},[kWh/m^2,month]" title="Q_{T,m,i},[kWh/m^2,month]" /></a> is the monthly transmission loss for the i-th component and is calculated as:
+where <a href="https://www.codecogs.com/eqnedit.php?latex=\varphi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\varphi" title="\varphi" /></a> represents the thermal bridge i.e., an area of the building envelope where the heat flow is increased in comparison with adjacent areas (if there is a difference in temperature between the inside and the outside). The thermal bridge can be calculated or can be assumed to have a certain percentage depending on the type/age/construction of the building as it is defined by SIA 380. 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{T,m,i},[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{T,m,i},[kWh/m^2,month]" title="Q_{T,m,i},[kWh/m^2,month]" /></a> is the monthly transmission loss for the i-th component and is calculated as:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{T,m,i}=(T_{in}-&space;T_{out})*z*k_i*U_i*24/(ERA*1000)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{T,m,i}=(T_{in}-&space;T_{out})*z*k_i*U_i*24/(ERA*1000)" title="Q_{T,m,i}=(T_{in}- T_{out})*z*k_i*U_i*24/(ERA*1000)" /></a>
 
-where <a href="https://www.codecogs.com/eqnedit.php?latex=T_i_n,[^{\circ}C]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?T_i_n,[^{\circ}C]" title="T_i_n,[^{\circ}C]" /></a> is the operating temperature inside, <a href="https://www.codecogs.com/eqnedit.php?latex=T_{out},[^{\circ}C]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?T_{out},[^{\circ}C]" title="T_{out},[^{\circ}C]" /></a> is the mean outside dry-bulb temperature during a month, <a href="https://www.codecogs.com/eqnedit.php?latex=U_i&space;[W/m^2&space;K]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?U_i&space;[W/m^2&space;K]" title="U_i [W/m^2 K]" /></a> is the heat transfer coefficient of the component i, <a href="https://www.codecogs.com/eqnedit.php?latex=k_i&space;[m^2]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k_i&space;[m^2]" title="k_i [m^2]" /></a>  is a surface area of the component i,  <a href="https://www.codecogs.com/eqnedit.php?latex=z[days]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?z[days]" title="z[days]" /></a> is the number of days in the current  month and <a href="https://www.codecogs.com/eqnedit.php?latex=ERA&space;[m^2]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?ERA&space;[m^2]" title="ERA [m^2]" /></a> is the energy reference area that represents the heated floor area of a building.
+where <a href="https://www.codecogs.com/eqnedit.php?latex=T_i_n,[^{\circ}C]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?T_i_n,[^{\circ}C]" title="T_i_n,[^{\circ}C]" /></a> is the operating temperature inside, 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=T_{out},[^{\circ}C]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?T_{out},[^{\circ}C]" title="T_{out},[^{\circ}C]" /></a> is the mean outside dry-bulb temperature during a month, 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=U_i&space;[W/m^2&space;K]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?U_i&space;[W/m^2&space;K]" title="U_i [W/m^2 K]" /></a> is the heat transfer coefficient of the component i,
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=k_i&space;[m^2]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k_i&space;[m^2]" title="k_i [m^2]" /></a>  is a surface area of the component i,
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=z[days]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?z[days]" title="z[days]" /></a> is the number of days in the current  month, 
+
+and <a href="https://www.codecogs.com/eqnedit.php?latex=ERA&space;[m^2]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?ERA&space;[m^2]" title="ERA [m^2]" /></a> is the energy reference area that represents the heated floor area of a building.
 
 In the current calculations, symbol i represents the components of the envelope and j represents the materials of the component i. The heat transfer for a component i <a href="https://www.codecogs.com/eqnedit.php?latex=U_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?U_i" title="U_i" /></a> is calculated as <a href="https://www.codecogs.com/eqnedit.php?latex=U_i&space;=&space;1/R_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?U_i&space;=&space;1/R_i" title="U_i = 1/R_i" /></a>. <a href="https://www.codecogs.com/eqnedit.php?latex=R_{i}&space;[(m^2*K)/W]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R_{i}&space;[(m^2*K)/W]" title="R_{i} [(m^2*K)/W]" /></a> is the thermal resistance of the component i:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=R_i&space;=&space;\sum_{j}^{}(d_j/\lambda_j)&plus;1/U_{ex,i}&plus;R_s_e&plus;R_s_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R_i&space;=&space;\sum_{j}^{}(d_j/\lambda_j)&plus;1/U_{ex,i}&plus;R_s_e&plus;R_s_i" title="R_i = \sum_{j}^{}(d_j/\lambda_j)+1/U_{ex,i}+R_s_e+R_s_i" /></a>
 
 Ventilation loss ![](https://latex.codecogs.com/gif.latex?Q_%7BV%7D)  – heat loss due to ventilation system. 
-It is calculated as: ![](https://latex.codecogs.com/gif.latex?Q_%7BV%7D%20%3D%20c_%7Bp%2Cair%7D%20*%20q_%7Bvent%7D*%28T_%7Bin%7D%20-%20T_%7Bout%7D%29), where
-<a href="https://www.codecogs.com/eqnedit.php?latex=c_{p,air}&space;[Wh/(m^3*K]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_{p,air}&space;[Wh/(m^3*K]" title="c_{p,air} [Wh/(m^3*K]" /></a> – air specific heat capacity
-<a href="https://www.codecogs.com/eqnedit.php?latex=q_{vent}[m^3/(m^2*h)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?q_{vent}[m^3/(m^2*h)]" title="q_{vent}[m^3/(m^2*h)]" /></a> – outside air volume flow
+
+It is calculated as: ![](https://latex.codecogs.com/gif.latex?Q_%7BV%7D%20%3D%20c_%7Bp%2Cair%7D%20*%20q_%7Bvent%7D*%28T_%7Bin%7D%20-%20T_%7Bout%7D%29), 
+
+where <a href="https://www.codecogs.com/eqnedit.php?latex=c_{p,air}&space;[Wh/(m^3*K]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_{p,air}&space;[Wh/(m^3*K]" title="c_{p,air} [Wh/(m^3*K]" /></a> – air specific heat capacity,
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=q_{vent}[m^3/(m^2*h)]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?q_{vent}[m^3/(m^2*h)]" title="q_{vent}[m^3/(m^2*h)]" /></a> – outside air volume flow,
+
 ![](https://latex.codecogs.com/gif.latex?T_%7Bin%7D) [![](https://latex.codecogs.com/gif.latex?%7B%5Ccirc%7D_%7BC%7D)]- comfort temerature inside,
+
 ![](https://latex.codecogs.com/gif.latex?T_%7Bout%7D) [![](https://latex.codecogs.com/gif.latex?%7B%5Ccirc%7D_%7BC%7D)] - monthly mean dry-bulb temperature outside.	
  
 For the calculation of the outside air volume flow in buildings with mechanical ventilation during the operating time of the ventilation, the larger value between the outside air and exhaust air volume flow of the ventilation system is used. To do this, the outside air volume flow due to the air permeability of the building envelope with running ventilation system is added. In buildings whose air permeability meets the requirements of SIA 180, it can be neglected.
@@ -43,13 +64,17 @@ A possible heat recovery with a temperature recovery efficiency can be taken int
 
 Heat gains (internal gains) – heat, which is released by the occupants, equipment, lighting. It is defined by static values of SIA 380/1. It is defined as:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{int,m}=Q_{icc,m}&space;&plus;&space;Q_{iel,m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{int,m}=Q_{icc,m}&space;&plus;&space;Q_{iel,m}" title="Q_{int,m}=Q_{icc,m} + Q_{iel,m}" /></a> , where
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{int,m}=Q_{icc,m}&space;&plus;&space;Q_{iel,m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{int,m}=Q_{icc,m}&space;&plus;&space;Q_{iel,m}" title="Q_{int,m}=Q_{icc,m} + Q_{iel,m}" /></a> , 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{icc,m}[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{icc,m}[kWh/m^2,month]" title="Q_{icc,m}[kWh/m^2,month]" /></a> is the monthly occupancy heat gain, which is calculated as:
+where <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{icc,m}[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{icc,m}[kWh/m^2,month]" title="Q_{icc,m}[kWh/m^2,month]" /></a> is the monthly occupancy heat gain, which is calculated as:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{icc,m}=Q_{g,occ,m}*t_{occ}*t/(A_p*1000)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{icc,m}=Q_{g,occ,m}*t_{occ}*t/(A_p*1000)" title="Q_{icc,m}=Q_{g,occ,m}*t_{occ}*t/(A_p*1000)" /></a>
 
-where <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{g,occ}[W/P]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{g,occ}[W/P]" title="Q_{g,occ}[W/P]" /></a> is the heat gain per person defined by SIA 380/1, <a href="https://www.codecogs.com/eqnedit.php?latex=t_{occ}[h/day]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?t_{occ}[h/day]" title="t_{occ}[h/day]" /></a> is the occupancy time during the day, t is the number of days in a month, and <a href="https://www.codecogs.com/eqnedit.php?latex=A_p&space;[m^2/P]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?A_p&space;[m^2/P]" title="A_p [m^2/P]" /></a> is the area per person. 
+where <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{g,occ}[W/P]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{g,occ}[W/P]" title="Q_{g,occ}[W/P]" /></a> is the heat gain per person defined by SIA 380/1, 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=t_{occ}[h/day]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?t_{occ}[h/day]" title="t_{occ}[h/day]" /></a> is the occupancy time during the day, t is the number of days in a month, 
+
+and <a href="https://www.codecogs.com/eqnedit.php?latex=A_p&space;[m^2/P]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?A_p&space;[m^2/P]" title="A_p [m^2/P]" /></a> is the area per person. 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{iel,m}&space;[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{iel,m}&space;[kWh/m^2,month]" title="Q_{iel,m} [kWh/m^2,month]" /></a> is the monthly heat gains from the electricity, e.g. lighting and equipment.
 
