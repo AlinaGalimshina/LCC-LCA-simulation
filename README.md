@@ -156,7 +156,7 @@ where <a href="https://www.codecogs.com/eqnedit.php?latex=m_{op}&space;[CHF/kWh]
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=ERA&space;[m^2]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?ERA&space;[m^2]" title="ERA [m^2]" /></a> is the energy reference area.
 
-The output from the assessment is the total LCC of a renovated building in CHF.
+The output from the assessment is the total LCCA of a renovated building in CHF.
 
 <ins>Life cycle assessment </ins>
 
@@ -180,4 +180,4 @@ PF [-] is the performance factor, which includes the efficiency of the heating s
 
 RSP [years] is the reference study period (building lifetime) and b is the number of the components.
 
-The output from this assessment is the total LCC of the renovated building in CHF/m2,year and LCA in kg.CO2eq..
+The output from the assessment is the LCEI in kg.CO2eq..
