@@ -76,44 +76,49 @@ where <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{g,occ}[W/P]" target
 
 and <a href="https://www.codecogs.com/eqnedit.php?latex=A_p&space;[m^2/P]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?A_p&space;[m^2/P]" title="A_p [m^2/P]" /></a> is the area per person. 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{iel,m}&space;[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{iel,m}&space;[kWh/m^2,month]" title="Q_{iel,m} [kWh/m^2,month]" /></a> is the monthly heat gains from the electricity, e.g. lighting and equipment.
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{iel,m}&space;[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{iel,m}&space;[kWh/m^2,month]" title="Q_{iel,m} [kWh/m^2,month]" /></a> is the monthly heat gains from the electricity, e.g. lighting and equipment:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{iel,m}=Q_{el,m}*f_{el}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{iel,m}=Q_{el,m}*f_{el}" title="Q_{iel,m}=Q_{el,m}*f_{el}" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{el,m}&space;[kWh/m^2]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=Q_{el}&space;[kWh/m^2]" title="=Q_{el} [kWh/m^2]" /></a> is the monthly electricity heat gains defined by SIA 380/1 and <a href="https://www.codecogs.com/eqnedit.php?latex=f_{el}[-]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{el}[-]" title="f_{el}[-]" /></a> is a  reduction factor defined by SIA 380/1.
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{el,m}&space;[kWh/m^2]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=Q_{el}&space;[kWh/m^2]" title="Q_{el,m} [kWh/m^2]" /></a> is the monthly electricity heat gains defined by SIA 380/1 and <a href="https://www.codecogs.com/eqnedit.php?latex=f_{el}[-]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{el}[-]" title="f_{el}[-]" /></a> is a  reduction factor defined by SIA 380/1.
 
-Solar heat gains <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{s,m}[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{s,m}[kWh/m^2,month]" title="Q_{s,m}[kWh/m^2,month]" /></a> - heat gains coming from solar to the building through the transparent surfaces (windows). It is calculated as:
+Solar heat gains <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{s,m}[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{s,m}[kWh/m^2,month]" title="Q_{s,m}[kWh/m^2,month]" /></a> is a heat gain coming from solar to the building through the transparent surfaces (windows). 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{s,m}=&space;\sum_{q}^{}Q_{s,m,q}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{s,m}=&space;\sum_{q}^{}Q_{s,m,q}" title="Q_{s,m}= \sum_{q}^{}Q_{s,m,q}" /></a>, where
+It is calculated as:
 
-where <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{s,m,q}[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{s,m,q}[kWh/m^2,month]" title="Q_{s,m,q}[kWh/m^2,month]" /></a> is the solar heat gains for month m for the q-th window. It is calculated as:
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{s,m}=&space;\sum_{q}^{}Q_{s,m,q}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{s,m}=&space;\sum_{q}^{}Q_{s,m,q}" title="Q_{s,m}= \sum_{q}^{}Q_{s,m,q}" /></a>, 
+
+where <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{s,m,q}[kWh/m^2,month]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{s,m,q}[kWh/m^2,month]" title="Q_{s,m,q}[kWh/m^2,month]" /></a> is the solar heat gains for month m for the q-th window. 
+
+It is calculated as:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{s,m,q}=&space;I_{sol}*A_q*g_q*f_q*f_{s1,q}*f_{s2,q}*f_{s3(I),q}*f_{s3(II),q}/ERA" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{s,m,q}=&space;I_{sol}*A_q*g_q*f_q*f_{s1,q}*f_{s2,q}*f_{s3(I),q}*f_{s3(II),q}/ERA" title="Q_{s,m,q}= I_{sol}*A_q*g_q*f_q*f_{s1,q}*f_{s2,q}*f_{s3(I),q}*f_{s3(II),q}/ERA" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=g_{q}&space;[-]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g_{q}&space;[-]" title="g_{q} [-]" /></a> - solar heat gain coefficient 
+where <a href="https://www.codecogs.com/eqnedit.php?latex=g_{q}&space;[-]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?g_{q}&space;[-]" title="g_{q} [-]" /></a> - solar heat gain coefficient, 
 
-![](https://latex.codecogs.com/gif.latex?A_%7Bwindow%7D) [m2] - Window area
+![](https://latex.codecogs.com/gif.latex?A_%7Bwindow%7D) [m2] - window area,
 
-f [%] - glazing percentage
+f [%] - glazing percentage,
  
-![](https://latex.codecogs.com/gif.latex?I_%7Bsol%7D) [kWh/m2] - monthly solar irradiation
+![](https://latex.codecogs.com/gif.latex?I_%7Bsol%7D) [kWh/m2] - monthly solar irradiation,
 
-![](https://latex.codecogs.com/gif.latex?f_%7Bs1%7D) - shading factor for horizon
+![](https://latex.codecogs.com/gif.latex?f_%7Bs1%7D) - shading factor for horizon,
 
-![](https://latex.codecogs.com/gif.latex?f_%7Bs2%7D) - shading factor for overhang
+![](https://latex.codecogs.com/gif.latex?f_%7Bs2%7D) - shading factor for overhang,
 
-![](https://latex.codecogs.com/gif.latex?f_%7Bs3%28I%29%29%7D), ![](https://latex.codecogs.com/gif.latex?f_%7Bs3%28II%29%29%7D) - shading factors for side blinds
+![](https://latex.codecogs.com/gif.latex?f_%7Bs3%28I%29%29%7D), ![](https://latex.codecogs.com/gif.latex?f_%7Bs3%28II%29%29%7D) - shading factors for side blinds,
 
 The assumptions taken for the shading factors can be seen in SIA 380/1 (2016), pages 37-38.
 
 Finally, the annual heating demand is calculated by summing the monthly heating demand:
-<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{H,a}=\sum_{m=1}^{12}Q_{H,m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{H,a}=\sum_{m=1}^{12}Q_{H,m}" title="Q_{H,a}=\sum_{m=1}^{12}Q_{H,m}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q_{H,a}=\sum_{m=1}^{12}Q_{H,m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{H,a}=\sum_{m=1}^{12}Q_{H,m}" title="Q_{H,a}=\sum_{m=1}^{12}Q_{H,m}" /></a>.
 
 After it is defined, the heating source is selected (heatpump, electricity, gas, oil, wood). For example, geothermal (ground source heat pump GSHP) can have a coefficient of performance (COP) as 3.5 which would mean that for 1 kWh of electricity we get 3.5 kWh of heating. For electricity COP is usually 1. For gas heating systems, there is another factor which is called AFUE – annual fuel utilization efficiency which can be between 70-97%. In this analysis, this factor is defined as PF (performance factor). Once the source is selected, the final energy demand is eventually calculated as:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Q_{F,a}=&space;Q_{H,a}/PF" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q_{F,a}=&space;Q_{H,a}/PF" title="Q_{F,a}= Q_{H,a}/PF" /></a>
 
-Life cycle cost analysis
+\mathbf{Life cycle cost analysis}
 
 Life cycle cost analysis (LCCA) is the method to calculate the life cycle cost (LCC) of the building, which is the sum of all costs over the whole life span. One of the most used methods to calculate LCC is the net present value approach (NPV), which is a sum of all costs and revenues discounted to the time of the initial investment.
 
